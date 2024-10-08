@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Registration Form</title>
+ </head>
+<body bgcolor="pink">
+        <h1><center>Registration Form</center></h1>
+        <form>
+            <!-- Username -->
+          
+           Username:&emsp;<input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br><br>
+          
+           <!-- Address-->
+            Address:&emsp;<textarea cols="20" rows="5" name="address" placeholder="Enter your Address"required></textarea>
+            <br><br>
+
+            <!-- Email -->
+            Email:&emsp;<input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Password -->
+             Password:&emsp;<input type="password" id="password" name="password" placeholder="Enter your password" required>
+             <br><br>
+
+            <!-- Confirm Password -->
+           Confirm password:&emsp;<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+           <br><br>
+
+            <!-- Phone Number -->
+            Phone number:&emsp;<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+            <br><br>
+            Languages Known:&emsp;<input type="checkbox" name="Malayalam" value="on" checked>Malayalam
+            <input type="checkbox" name="English" value="on" checked>English
+            <input type="checkbox" name="Arabic" value="on" checked>Arabic
+            <br><br>
+            <!-- Gender -->
+            Gender:&emsp;<input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <br><br>
+            <!--Hobbies-->
+            Hobbies:&emsp;<select name="dropdown">
+                <option value="Football">Football</option>
+                <option value="Basketball">basketball</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
+
