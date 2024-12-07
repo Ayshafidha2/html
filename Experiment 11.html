@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color:lavender;
+        }
+        
+        
+        .question {
+            margin-bottom: 15px;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #submit-btn {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz</h2>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. How many heading levels are available in HTML?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A. 3 </label>
+                    <label><input type="radio" name="q1" value="B"> B. 5</label>
+                    <label><input type="radio" name="q1" value="C"> C. 6</label>
+                    <label><input type="radio" name="q1" value="D"> D. 7</label>
+                </div>
+            </div>
+            <!-- Questions 2-->
+            <div class="question">
+                <p>2. Who is known as the father of HTML?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A. Dennis Ritchie</label>
+                    <label><input type="radio" name="q2" value="B"> B. Tim Berners-Lee</label>
+                    <label><input type="radio" name="q2" value="C"> C. James Gosling</label>
+                    <label><input type="radio" name="q2" value="D"> D. Brendan Eich</label>
+                </div>
+            </div>
+            <!--question 3-->
+            <div class="question">
+                <p>3. What does HTML stand for?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A. HyperText Markup Language</label>
+                    <label><input type="radio" name="q3" value="B"> B. HighText Machine Language</label>
+                    <label><input type="radio" name="q3" value="C"> C. HyperTransfer Markup Language</label>
+                    <label><input type="radio" name="q3" value="D"> D. HyperText Machine Language</label>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4.What is the correct HTML element for inserting a line break?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A. break tag</label>
+                    <label><input type="radio" name="q4" value="B"> B. br tag</label>
+                    <label><input type="radio" name="q4" value="C"> C. lb tag</label>
+                    <label><input type="radio" name="q4" value="D"> D. hr tag</label>
+                </div>
+            </div>
+            <!-- Question 5-->
+            <div class="question">
+                <p>5.Which attribute is used to provide additional information about an HTML element?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A. info</label>
+                    <label><input type="radio" name="q5" value="B"> B. alt</label>
+                    <label><input type="radio" name="q5" value="C"> C. class</label>
+                    <label><input type="radio" name="q5" value="D"> D. title</label>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6.Which of these tags is used for creating a table in HTML?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A"> A. table tag</label>
+                    <label><input type="radio" name="q6" value="B"> B. tbl tag</label>
+                    <label><input type="radio" name="q6" value="C"> C. tble tag</label>
+                    <label><input type="radio" name="q6" value="D"> D. tab tag</label>
+                </div>
+            </div><!-- Question 7 -->
+            <div class="question">
+                <p>7.Which of the following is used to style a webpage?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="A"> A. HTML</label>
+                    <label><input type="radio" name="q7" value="B"> B. CSS</label>
+                    <label><input type="radio" name="q7" value="C"> C. PHP</label>
+                    <label><input type="radio" name="q7" value="D"> D. SQL</label>
+                </div>
+            </div><!-- Question 8 -->
+            <div class="question">
+                <p>8.What does IP in IP address stand for?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="A"> A. Internet Protocol</label>
+                    <label><input type="radio" name="q8" value="B"> B. Internal Protocol</label>
+                    <label><input type="radio" name="q8" value="C"> C. Internet Privacy</label>
+                    <label><input type="radio" name="q8" value="D"> D. Internal Privacy</label>
+                </div>
+            </div><!-- Question 9 -->
+            <div class="question">
+                <p>9.Which is NOT an operating system?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="A"> A. Linux</label>
+                    <label><input type="radio" name="q9" value="B"> B.Windows</label>
+                    <label><input type="radio" name="q9" value="C"> C.MacOS</label>
+                    <label><input type="radio" name="q9" value="D"> D. Chrome</label>
+                </div>
+            </div><!-- Question 10 -->
+            <div class="question">
+                <p>10.Which of these is a database management system?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="A"> A. MySQL</label>
+                    <label><input type="radio" name="q10" value="B"> B. Java</label>
+                    <label><input type="radio" name="q10" value="C"> c. React</label>
+                    <label><input type="radio" name="q10" value="D"> D. Django</label>
+                </div>
+            </div>
+            <button type="button" id="submit-btn" onclick="calculateScore()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "C",// 6
+            q2: "B", // Tim Berners-Lee
+            q3: "A", // HyperText Markup Language
+            q4: "B", // br
+            q5: "D", // title
+            q6: "A", // table tag
+            q7: "B", // CSS
+            q8: "A", // Internet Protocol
+            q9: "D", // Chrome
+            q10:"A", //MySQL
+            // Add correct answers for the other questions
+        };
+
+        function calculateScore() {
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+
+            for (const [key, value] of formData.entries()) {
+                if (correctAnswers[key] === value) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `Your final score is: ${score} / 10`;
+            form.reset();
+        }
+    </script>
+</body>
+</html>
+
